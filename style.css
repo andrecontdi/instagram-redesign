@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
+
+:root {
+  --gray: #eaebf3;
+  --dark-gray: #a5a5a5;
+  --black: #000000;
+  --text-sm: 10px;
+  --text-md: 12px;
+  --text-lg: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--gray);
+}
+
+/* Estilos generales */
+.text--sm {
+  font-size: var(--text-sm);
+  text-align: center;
+  margin: 0;
+}
+
+.text--md {
+  font-size: var(--text-md);
+  text-align: center;
+  margin: 0;
+}
+
+.text--lg {
+  font-size: var(--text-lg);
+  text-align: center;
+  margin: 0;
+}
+
+.icon--sm {
+  width: 16px;
+}
+
+.icon--md {
+  width: 24px;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px 0px;
+}
+
+.btn {
+  justify-self: center;
+  border: none;
+  background: var(--gray);
+}
+
+.btn--link {
+  align-self: start;
+  position: relative;
+}
+
+.btn__container {
+  position: relative;
+  justify-self: center;
+  align-self: end;
+}
+
+.btn--neomorphism {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+    -9px -9px 16px rgb(255 255 255 / 50%);
+  margin-bottom: 16px;
+}
+
+.notification {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #e00e0f;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+}
+
+.profile-pic__container h2 {
+  margin-top: 20px;
+}
+.profile-pic--neomorphism {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 16px 0;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+    -9px -9px 16px rgb(255 255 255 / 50%);
+}
+
+.profile-pic--background {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(to right, red, purple);
+}
+
+.profile-pic {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 3px solid var(--gray);
+  background: var(--gray);
+}
+
+/* Stats Section */
+.stats__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+    -9px -9px 16px rgb(255 255 255 / 50%);
+  margin: 20px 16px 16px 16px;
+}
+
+.stat__container {
+  text-align: center;
+}
+
+/* Higlights Section */
+.highlights__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 16px;
+}
+
+.highlight__container {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+    -9px -9px 16px rgb(255 255 255 / 50%);
+}
+
+.highlight-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--gray);
+  background: var(--gray);
+}
+
+.highlight__container h4 {
+  margin-top: 8px;
+}
+/* Posts Section */
+.posts__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+  place-items: center;
+  margin: 40px 12px;
+}
+
+.posts__container img {
+  border-radius: 8px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
